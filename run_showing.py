@@ -33,7 +33,7 @@ with open("playlist.txt") as f:
 
 playlist = playlists[playlist_index]
 
-command = ['mpv', '--pause', '--alang=jpn', '--slang=eng']
+command = ['mpv', '--pause', '--alang=jpn', '--slang=eng', '--no-osc']
 for episode in playlist:
     command.append('--{')
     command.extend(episode.options)
